@@ -7,7 +7,7 @@ body {
     padding: 30px;
 }
 
-.wrap .alert-box {
+.wrap .class .alert-box {
     display: none;
     width: 100%;
     height: 20px;
@@ -17,4 +17,14 @@ body {
     font-size: 20px;
     color: #fefefe;
     background-color: #3233FF;
+}
+
+.homework .login {
+    display: none;
+    width: 100%;
+    height: 20px;
+    line-height: 100%;
+    padding: 25px;
+    color: #202020;
+    background-color: #CCFF00;
 }
