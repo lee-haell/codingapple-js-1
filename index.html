@@ -11,31 +11,32 @@
     
     <div class="wrap">
         <!-- 1 -->
-        <p id="hello">안녕하세요</p>
+        <!-- <p id="hello">안녕하세요</p> -->
         <!-- 2 -->
-        <p id="alert-box" class="alert-box">
-            알림창임
-            <button id="closeBtn" class="closeBtn" onclick="alertClose()">닫기</button>
+        <p id="alert-box" class="alert-box">알림창임
+            <button id="closeBtn" class="closeBtn" onclick="alert('none')">닫기</button>
         </p>
-        <button id="btn" class="btn" onclick="alertOpen()">버튼</button>
+        <button id="btn" class="btn" onclick="alert('block')">버튼</button>
     </div>
 
     <script>
         /* 1. js로 html 제어 - 폰트크기변경 */
-        document.getElementById('hello').style.fontSize = '20px';
+        // document.getElementById('hello').style.fontSize = '20px';
 
         /* js로 html 제어 - alert박스 띄우기 */
-        function alertOpen(){
-            document.getElementById('alert-box').style.display = 'block';
-            console.log('alertOpen');
-        }
-        
-        /* js로 html 제어 - alert박스 닫기 */
-        function alertClose(){
-            // if(document.getElementById('alert-box').style.display != 'none'){
-                document.getElementById('alert-box').style.display = 'none';
-            // }
-            console.log('alertClose');
+        // function alertOpen(){
+        //     document.getElementById('alert-box').style.display = 'block';
+        //     console.log('alertOpen');
+        // }
+        // /* js로 html 제어 - alert박스 닫기 */
+        // function alertClose(){
+        //     document.getElementById('alert-box').style.display = 'none';
+        //     console.log('alertClose');
+        // }
+
+        /* function에 사용 가능한 파라미터 문법 > 위처럼 비슷한 함수 있을 경우 유용 */
+        function alert(구멍){
+            document.getElementById('alert-box').style.display = 구멍;
         }
 
     </script>
