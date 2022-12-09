@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/src/style.css">
     <title>codingapple javascript</title>
 </head>
 <body>
@@ -15,9 +15,9 @@
         <!-- 2 -->
         <p id="alert-box" class="alert-box">
             알림창임
-            <button id="closeBtn" class="closeBtn" onclick="close()">닫기</button>
+            <button id="closeBtn" class="closeBtn" onclick="alertClose()">닫기</button>
         </p>
-        <button id="btn" class="btn" onclick="btn()">버튼</button>
+        <button id="btn" class="btn" onclick="alertOpen()">버튼</button>
     </div>
 
     <script>
@@ -25,16 +25,17 @@
         document.getElementById('hello').style.fontSize = '20px';
 
         /* js로 html 제어 - alert박스 띄우기 */
-        function btn(){
+        function alertOpen(){
             document.getElementById('alert-box').style.display = 'block';
-            console.log('111');
+            console.log('alertOpen');
         }
-
-        function close(){
-            if(document.getElementById('alert-box').style.display != 'none'){
+        
+        /* js로 html 제어 - alert박스 닫기 */
+        function alertClose(){
+            // if(document.getElementById('alert-box').style.display != 'none'){
                 document.getElementById('alert-box').style.display = 'none';
-            }
-            
+            // }
+            console.log('alertClose');
         }
 
     </script>
